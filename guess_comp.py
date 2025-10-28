@@ -16,10 +16,13 @@ while True:
     if feedback == 'c':
         print(f"Got it! Your number was {comp_guess}")
         break
+
     elif feedback == 'l':
         low = comp_guess + 1
+
     elif feedback == 'h':
         high = comp_guess - 1
+        
     else:
         print("Please enter 'h' for too high, 'l' for too low, or 'c' for correct.")
         guesses.pop()  # Remove invalid guess from list
