@@ -1,10 +1,12 @@
 import random
 from datetime import datetime
+
 STATS_FILE = 'stats.txt'
 
 def save_stats(attempts, difficulty):
     timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
     with open(STATS_FILE, "a") as f:
+        status = attempts if attempts is not None else 'Lost'
         f.write(f"{timestamp} | {difficulty} | {attempts if attempts is not None else 'Lost'} попыток\n")
 
 # Difficulties chain
@@ -15,7 +17,7 @@ def difficulties():
     print("Hard: 1-1000, 10 attempts.")
     
     while True:
-        choice = input("Your choice (E, M or H): ")
+        choice = input("Your choice (E, M or H): ").strip().upper()
         
         if choice == "E":
             return 1, 10, 5, "Easy"
