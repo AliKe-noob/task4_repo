@@ -1,4 +1,4 @@
-A little directions README for codes me and fellow AI (debugging purposes) have made.
+A little directions README fellow AI (debugging purposes) have made.
 
 guess_advanced consists of an intro with difficulties that you can choose by typing E,M or H, which are easy medium hard.
 It is also able to leave some records an user had made, writing them down in that stats.txt with dates, what mode a person chose and W/L ratio. E mode has 1-10 and 5 attempts which are too much so one would agree to call this easy. Next up is Medium, 1-100 with 7 attempts, it usually takes 6 average, so you have an extra chance to win. Hard mode is 1-1000 with 10 attempts.
@@ -8,3 +8,5 @@ Precisely counts attempts left and done.
 guess_basic is what you would expect from a simple guess the number code, made via youtube tutorial. gives random number, tells you to guess and congratulates you.
 
 guess_comp is a code where you aren't the one guessing. However it uses a binary method of finding the right number. The way it works is you type the number in that you want the computer to guess, just to keep in mind, and by saying h, l, or c, which are high, low, correct, the computer will eventually guess it.
+
+This is going to be my first ever commit in my first ever project pls dont judge.
