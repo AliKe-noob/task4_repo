@@ -4,9 +4,9 @@ secret = random.randint(1, 100)
 print("I'm thinking of a number between 1-100")
 
 while True:
-    guess = int(input("Your guess: "))
-    
-    if guess < 1 or guess > 100:
+    try:
+        guess = int(input("Your guess: "))
+    except ValueError:
         print("Out of range!")
         continue
         
